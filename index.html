@@ -4,25 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <title>Responsive Portfolio</title>
+    <title>Armando Osorio (Responsive Portfolio)</title>
   </head>
 
   <body>
     <!--CSS-->
     <style>
         body {
-          background-image: url('IMG_2652 copy.JPG');
+          background-image: url("body_background.JPG");
           background-repeat: no-repeat;
           background-size: cover;
         }
         h2 {
             text-align: center;
             color: white;
-            font-family: courier;
+            font-family: "Courier New";
         }
         p {
-            font-family: courier;
+            font-family: "Courier New";
             color: white;
+            font-size: 13px;
         }
         .center {
             display: block;
@@ -32,24 +33,117 @@
             margin-top: 50px;
             margin-bottom: 50px;
         }
-        .footer {
-            position: fixed;
-            left: 0;
-            bottom: 0;
-            width: 100%;
-            color: white;
-            text-align: center;
-        }
         footer {
             padding: 20px;
             clear: both;
             text-align: center;
+            background-color: black;
         }
+        h4 {
+          color: white;
+          font-family: "Courier New";
+        }
+        .col-sm-4 {
+          background-size: cover;
+          padding-top: 20px;
+          padding-bottom: 5px;
+          padding-left: 25px;
+          padding-right: 25px;
+        }
+        .center-column {
+          background-image: url("middle_third.jpg");
+          background-size: cover;
+          border-radius: 8px;
+          max-width: 31.94%;
+        }
+        .left-column {
+          background-image: url("left_third.jpg");
+          background-size: cover;
+          border-radius: 8px;
+          margin-right: 20px;
+          max-width: 31.94%;
+        }
+        .right-column {
+          background-image: url("right_third.jpg");
+          background-size: cover;
+          border-radius: 8px;
+          margin-right: 0px;
+          margin-left: 20px;
+          max-width: 31.94%
+        }
+        .top-left {
+          background-image: url("top-left.jpg");
+          background-size: cover;
+          border-radius: 8px;
+          margin-right: 10px;
+          max-width: 48.95%;
+          margin-bottom: 15px;
+        }
+        .top-right {
+          background-image: url("top-right.jpg");
+          background-size: cover;
+          border-radius: 8px;
+          margin-right: 0px;
+          margin-left: 10px;
+          max-width: 48.95%;
+          margin-bottom: 15px;
+        }
+        .bottom-left {
+          background-image: url("bottom-left.jpg");
+          background-size: cover;
+          border-radius: 8px;
+          margin-right: 10px;
+          max-width: 48.95%;
+        }
+        .bottom-right {
+          background-image: url("bottom-right.jpg");
+          background-size: cover;
+          border-radius: 8px;
+          margin-right: 0px;
+          margin-left: 10px;
+          max-width: 48.95%
+        }
+        .col {
+          padding-top: 20px;
+          padding-bottom: 5px;
+          padding-left: 25px;
+          padding-right: 25px;
+        }
+        a {
+          color: white;
+        }
+        a:hover {
+          color: blanchedalmond;
+        }
+        a:link {
+          text-decoration: none;
+        }
+        .top-left:hover {
+          transform: scaleX(-1);
+        }
+        .top-right:hover {
+          transform: scaleX(-1);
+        }
+        .bottom-left:hover {
+          transform: scaleX(-1);
+        }
+        .bottom-right:hover {
+          transform: scaleX(-1);
+        }
+        .basics:hover {
+          transform: scaleX(-1);
+        }
+        h4:hover {
+          transform: scaleX(-1);
+        }
+        /*p:hover {
+          transform: scaleX(-1);
+        }*/
         </style>
     <!--CSS-->
 
     <!--NAVBAR-->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <a class="navbar-brand" href="#">Armando Osorio</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -87,32 +181,74 @@
     <!--NAVBAR-->
 
     <!--PROFILE PICTURE-->
-    <img src="IMG_5530 copy.jpg" alt="Profile Picture" style="width:400px;height:300px;" class="center">
+    <img src="center_top.jpg" alt="Profile Picture" style="width:400px; height:300px; border-radius:8px;" class="center">
     <!--PROFILE PICTURE-->
+
+    <!--NEXT TO IMAGE HAVE A UTILITIES BAR WITH CALENDAR, DATE, ETC-->
 
     <!--3 COLUMNS-->
     <div class="container">
         <div class="row">
-          <div class="col-sm-4">
+          <div class="col-sm-4 left-column">
               <h2>About</h2>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
           </div>
-          <div class="col-sm-4">
+          <div class="col-sm-4 center-column">
               <h2>Overview</h2>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
           </div>
-          <div class="col-sm-4">
+          <div class="col-sm-4 right-column">
               <h2>Projects</h2>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
           </div>
         </div>
     </div>
     <!--3 COLUMNS-->
+    <br>
+    <!--ACTIVITIES will include a skeleton version of rock, paper, scissor as well as the password generator-->
+    <div class="container">
+      <div class="row row-cols-2">
+        <div class="col top-left">
+          <h4><a href="file:///Users/Mando/Desktop/mandoosorio.github.io/portfolio/activity%20htmls/rock_paper_scissors.html" target="_blank">Rock, Paper, Scissors</a></h3>
+            <p class="basics">
+              This is just the skeleton of the game, basic structure and functionaltiy. 
+            </p>
+        </div>
+        <div class="col top-right">
+          <h4><a href="file:///Users/Mando/Desktop/mandoosorio.github.io/portfolio/activity%20htmls/password_generator.html" target="_blank">Password Generator</a></h3>
+            <p class="basics">
+              Through the selection of what type of characters you want included, this app will create a randomised password.
+            </p>
+        </div>
+        <div class="col bottom-left">
+          <h4><a href="file:///Users/Mando/Desktop/mandoosorio.github.io/portfolio/activity%20htmls/random_paragraph.html" target="_blank">Questionnaire</a></h3>
+            <p class="basics">
+              Answering and confirming questions will create a fun random paragraph filling in blanks with your responses.
+            </p>
+        </div>
+        <div class="col bottom-right">
+          <h4>Pending</h3>
+            <p class="basics">
+              Next project to come.
+            </p>
+        </div>
+      </div>
+    </div>
+    <!--ACTIVITIES-->
 
+    <!--HIDDEN PAGE THAT NEEDS A PASSWORD TO ACCESS-->
+
+    <br>
     <!--FOOTER-->
     <footer>
         <p>Footer</p>
     </footer>
     <!--FOOTER-->
+
+    <!--JAVASCRIPT-->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <!--JAVASCRIPT-->
   </body>
 </html>

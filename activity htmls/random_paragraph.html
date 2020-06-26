@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Random Paragraph</title>
+  </head>
+
+  <!--these will be questions that should be asked when first getting to know someone-->
+
+  <body>
+
+    <script type="text/javascript">
+    //first alert and instructions
+    alert("In this simple task, you will be asked questions and you will either input some information or press the buttons shown in the text box. Since the buttons displayed are set by default, the three different buttons you'll see are 'ok', 'cancel', and 'close'. 'ok' will be equal to 'yes', 'cancel' will be equal to 'no', and 'close' will simply move you on to the next prompt. So let's begin.")
+    //color related questions
+    var favColor = prompt("So tell me, what's your favorite color?");
+    if (favColor == "black") {
+        alert("Woah! Shot! Mine too \\m/");
+    } else if (favColor == "purple") {
+        alert("If you're talking about dark purple, then ditto to that!");
+    }
+    var favcolorItem = prompt(`What are some ${favColor} things?`);
+    alert(`${favcolorItem} hmmmm... interestinggggg...`);
+    //food related questions
+    var favFood = prompt("What's your favorite food?");
+    if (favFood == "bacon") {
+        alert("Hey! Same!");
+    } else {
+    alert (`I like pretty much anything as long as it has bacon, but ${favFood} sounds good also.`);
+    var likesBacon = confirm("Do you like bacon?");
+    if (likesBacon == true) {
+        alert("Dude! It's bomb isn't it?");
+    } else {
+        alert("Well, that's alright.");
+    }}
+    //random paragraph
+    alert("Alright, now let's answer some random questions and then your answers will be inputed into a paragraph. Lessss go.");
+    var height = prompt("How tall are you? *include 'feet' and 'inches'*");
+    var weight = prompt("lmaooo I know it's not deemed appropriate to ask for your weight but no one needs to know, so how much do you weigh? *Don't include units of measurement*");
+    var color = prompt("What is your least favorite color?");
+    var smelly = prompt("What's something that smells really bad?");
+    var name = prompt("An adjective that describes the person you hate the most.");
+    alert("Inputing your answers...");
+    alert(`Mr. ${name} had ${weight} pairs of underwear. He went through at least five pairs a day until one day, he was all out. Of course, he wasn't washing his clothes so he would pick up a pair and smell them to check if they were clean. He found a ${color} pair in his freezer, but this one had a shit stain so it was clearly dirty. The second pair he found under his bed. He smelled it and remembered that it was the pair he wore the day he made a caserole that tasted like ${smelly}. That caserole made him so gassy that when he farted, he shot ${height} up into the sky. The end.`);
+
+    </script>
+  </body>
+</html>
