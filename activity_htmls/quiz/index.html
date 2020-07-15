@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Code Quiz</title>
+    </head>
+
+    <style>
+        .hide {
+            display: none;
+        }
+    </style>
+
+    <body>
+        <div style="float:left;width:50%;">
+            <!--[1]-->
+            <div id="highscores"><a href="#score-form">View Highscores</a></div>
+        </div>
+        <div style="float:left;width:50%;text-align:right;">
+            <!--             [2]                                [3]-->
+            <div><span id="minutes">01</span><span>:</span><span id="seconds">00</span></div>
+        </div>
+
+        <!------------STARTING SCREEN------------>
+        <div id="starting-screen" style="text-align:center;clear:both;padding-top:75px;">
+            <div style="border-style:dotted;margin-left:25%;margin-right:25%;padding-left:30px;padding-right:30px;padding-bottom:25px;padding-top:10px;">
+                <h2>Code Quiz!</h2>
+                <p>You will have 1 minute to answer as many questions as you can. If you finish all questions before the time runs out, the better your score will be. Click "start" to begin!</p>
+                <!--[4]-->
+                <button id="start-button">Take Quiz</button>
+            </div>
+        </div>
+
+        <!------------FIRST QUESTION------------>
+        <div id="first-question" class="hide" style="text-align:center;clear:both;padding-top:75px;">
+            <div style="border-style:dotted;margin-left:25%;margin-right:25%;padding-left:30px;padding-right:30px;padding-bottom:25px;padding-top:10px;">
+                <h2>Question <span>1</span></h2>
+                <p>Which function will return a random number from 1 through 10?</p>
+                <div id="button1" style="text-align:left;">
+                    <button class="button1" value="wrong">A) Math.floor((Math.random() * 10)</button><br>
+                    <button class="button2" value="correct">B) Math.floor((Math.random() * 10) + 1)</button><br> <!--correct-->
+                    <button class="button3" value="wrong">C) Math.floor((Math.random() * 9)</button><br>
+                    <button class="button4" value="wrong">D) (Math.random() * 10)</button><br>
+                </div>
+            </div>
+        </div>
+
+        <!------------SECOND QUESTION------------>
+        <div id="second-question" class="hide" style="text-align:center;clear:both;padding-top:75px;">
+            <div style="border-style:dotted;margin-left:25%;margin-right:25%;padding-left:30px;padding-right:30px;padding-bottom:25px;padding-top:10px;">
+                <h2>Question <span>2</span></h2>
+                <p>If var potato = ["starch", "ground", "fried", "idaho"]; how is "fried" accessed?</p>
+                <div id="button2" style="text-align:left;">
+                    <button class="button5" value="wrong">A) potato[3]</button><br>
+                    <button class="button6" value="wrong">B) potato[4]</button><br>
+                    <button class="button7" value="correct">C) potato[2]</button><br> <!--correct-->
+                    <button class="button8" value="wrong">D) potato.2</button><br>
+                </div>
+            </div>
+        </div>
+
+        <!------------THIRD QUESTION------------>
+        <div id="third-question" class="hide" style="text-align:center;clear:both;padding-top:75px;">
+            <div style="border-style:dotted;margin-left:25%;margin-right:25%;padding-left:30px;padding-right:30px;padding-bottom:25px;padding-top:10px;">
+                <h2>Question <span>3</span></h2>
+                <p>Which of the following will not lead to concatenation?</p>
+                <div id="button3" class="button" style="text-align:left;">
+                    <button class="button9" value="wrong">A) 2 + "3"</button><br>
+                    <button class="button10" value="correct">B) 2 + 3</button><br> <!--correct-->
+                    <button class="button11" value="wrong">C) "2" + "3"</button><br>
+                    <button class="button12" value="wrong">D) 2 + "" + 3</button><br>
+                </div>
+            </div>
+        </div>
+        
+        <!------------FOURTH QUESTION------------>
+        <div id="fourth-question" class="hide" style="text-align:center;clear:both;padding-top:75px;">
+            <div style="border-style:dotted;margin-left:25%;margin-right:25%;padding-left:30px;padding-right:30px;padding-bottom:25px;padding-top:10px;">
+                <h2>Question <span>4</span></h2>
+                <p>Which demonstrates string interpolation--where var = "string"; ?</p>
+                <div style="text-align:left;">
+                    <button class="button13" value="wrong">A) "This is" + var + "interpolation."</button><br>
+                    <button class="button14" value="wrong">B) "This is ${var} interpolation."</button><br>
+                    <button class="button15" value="wrong">C) `This is var interpolation."</button><br>
+                    <button class="button16" value="correct">D) `This is ${var} interpolation.`</button><br> <!--correct-->
+                </div>
+            </div>
+        </div>
+
+        <!------------FIFTH QUESTION------------>
+        <div id="fifth-question" class="hide" style="text-align:center;clear:both;padding-top:75px;">
+            <div style="border-style:dotted;margin-left:25%;margin-right:25%;padding-left:30px;padding-right:30px;padding-bottom:25px;padding-top:10px;">
+                <h2>Question <span>5</span></h2>
+                <p>If an HTML element includes class="div" and id="div1" how would I point to these in CSS?</p>
+                <div style="text-align:left;">
+                    <button class="button17" value="correct">A) .div and #div1</button><br> <!--correct-->
+                    <button class="button18" value="wrong">B) #div and .div1</button><br> 
+                    <button class="button19" value="wrong">C) #div and #div1</button><br>
+                    <button class="button20" value="wrong">D) .div and .div1</button><br>
+                </div>
+            </div>
+        </div>
+
+        <!------------SIXTH QUESTION------------>
+        <div id="sixth-question" class="hide" style="text-align:center;clear:both;padding-top:75px;">
+            <div style="border-style:dotted;margin-left:25%;margin-right:25%;padding-left:30px;padding-right:30px;padding-bottom:25px;padding-top:10px;">
+                <h2>Question <span>6</span></h2>
+                <p>Can a function be called on before it is created?</p>
+                <div style="text-align:left;">
+                    <button class="button21" value="wrong">A) Maybe</button><br>
+                    <button class="button22" value="wrong">B) Sometimes</button><br> 
+                    <button class="button23" value="correct">C) Yes, as long as the the function doesn't live within a variable or another function.</button><br> <!--correct-->
+                    <button class="button24" value="wrong">D) No</button><br>
+                </div>
+            </div>
+        </div>
+
+        <!------------SEVENTH QUESTION------------>
+        <div id="seventh-question" class="hide" style="text-align:center;clear:both;padding-top:75px;">
+            <div style="border-style:dotted;margin-left:25%;margin-right:25%;padding-left:30px;padding-right:30px;padding-bottom:25px;padding-top:10px;">
+                <h2>Question <span>7</span></h2>
+                <p>If I am changing the thickness/width of my border and I have values set as 20px 10px 10px 20px, which number represents which side?</p>
+                <div style="text-align:left;">
+                    <button class="button25" value="wrong">A) top, left, bottom, right</button><br>
+                    <button class="button26" value="correct">B) top, right, bottom, left</button><br> <!--correct-->
+                    <button class="button27" value="wrong">C) right, bottom, left, top</button><br>
+                    <button class="button28" value="wrong">D) left, top, right, bottom</button><br>
+                </div>
+            </div>
+        </div>
+
+        <!------------EIGHTH QUESTION------------>
+        <div id="eighth-question" class="hide" style="text-align:center;clear:both;padding-top:75px;">
+            <div style="border-style:dotted;margin-left:25%;margin-right:25%;padding-left:30px;padding-right:30px;padding-bottom:25px;padding-top:10px;">
+                <h2>Question <span>8</span></h2>
+                <p>If these questions were stored in an array, which index would you be on right now?</p>
+                <div style="text-align:left;">
+                    <button class="button29" value="wrong">A) 6</button><br>
+                    <button class="button30" value="correct">B) 7</button><br> <!--correct-->
+                    <button class="button31" value="wrong">C) 8</button><br>
+                    <button class="button32" value="wrong">D) 9</button><br>
+                </div>
+            </div>
+        </div>
+
+        <!------------NINTH QUESTION------------>
+        <div id="ninth-question" class="hide" style="text-align:center;clear:both;padding-top:75px;">
+            <div style="border-style:dotted;margin-left:25%;margin-right:25%;padding-left:30px;padding-right:30px;padding-bottom:25px;padding-top:10px;">
+                <h2>Question <span>9</span></h2>
+                <p>Where inside an HTML file can a CSS file be attached ?</p>
+                <div style="text-align:left;">
+                    <button class="button33" value="wrong">A) Inside the head.</button><br>
+                    <button class="button34" value="wrong">B) Inside the body.</button><br>
+                    <button class="button35" value="wrong">C) Outside the body.</button><br>
+                    <button class="button36" value="correct">D) Anywhere within the HTML.</button><br> <!--correct-->
+                </div>
+            </div>
+        </div>
+
+        <!------------TENTH QUESTION------------>
+        <div id="tenth-question" class="hide" style="text-align:center;clear:both;padding-top:75px;">
+            <div style="border-style:dotted;margin-left:25%;margin-right:25%;padding-left:30px;padding-right:30px;padding-bottom:25px;padding-top:10px;">
+                <h2>Question <span>10</span></h2>
+                <p>Which one is wrong?</p>
+                <div style="text-align:left;">
+                    <button class="button37" value="wrong">A) var potato = []; </button><br>
+                    <button class="button38" value="correct">B) var potato = "string"</button><br> <!--correct-->
+                    <button class="button39" value="wrong">C) var potato = "";</button><br>
+                    <button class="button40" value="wrong">D) var potato = false;</button><br>
+                </div>
+            </div>
+        </div>
+
+        <!------------SAVE SCORE FORM------------>
+        <div id="score-form" class="hide" style="text-align:center;clear:both;padding-top:75px;">
+            <div style="border-style:dotted;margin-left:25%;margin-right:25%;padding-left:30px;padding-right:30px;padding-bottom:25px;padding-top:10px;">
+                <h2>Save Your Score</h2>
+                <label>Initials:</label>
+                <input id="user-initials" placeholder="Initials Here"/>
+                <button id="save" style="text-align:center;">Save</button>
+                <h3>Previous Scores</h3>
+                <p><span id="initials"></span> <span id="score"></span></p>
+                <ul id="score-list" style="text-align:center;"></ul>
+            </div>
+        </div>
+    </body>
+
+    <script>
+        var startScreen = document.querySelector("#starting-screen");
+        var highScores = document.querySelector("#highscores");
+        var minutesEl = document.querySelector("#minutes");
+        var secondsEl = document.querySelector("#seconds");
+        var startButton = document.querySelector("#start-button");
+        var questionElements = [
+            firstQuestion = document.querySelector("#first-question"),
+            secondQuestion = document.querySelector("#second-question"),
+            thirdQuestion = document.querySelector("#third-question"),
+            fourthQuestion = document.querySelector("#fourth-question"),
+            fifthQuestion = document.querySelector("#fifth-question"),
+            sixthQuestion = document.querySelector("#sixth-question"),
+            seventhQuestion = document.querySelector("#seventh-question"),
+            eigthQuestion = document.querySelector("#eighth-question"),
+            ninthQuestion = document.querySelector("#ninth-question"),
+            tenthQuestion = document.querySelector("#tenth-question"),
+            scoreForm = document.querySelector("#score-form")
+        ];
+        var saveButton = document.querySelector("#save");
+        var initials = document.querySelector("#initials");
+        var scoreList = document.querySelector("#score-list");
+        var userInitials = document.querySelector("#user-initials");
+        
+        var button1 = document.querySelector(".button1");
+        var button2 = document.querySelector(".button2");
+        var button3 = document.querySelector(".button3");
+        var button4 = document.querySelector(".button4");
+
+        var button5 = document.querySelector(".button5");
+        var button6 = document.querySelector(".button6");
+        var button7 = document.querySelector(".button7");
+        var button8 = document.querySelector(".button8");
+
+        var button9 = document.querySelector(".button9");
+        var button10 = document.querySelector(".button10");
+        var button11 = document.querySelector(".button11");
+        var button12 = document.querySelector(".button12");
+
+        var button13 = document.querySelector(".button13");
+        var button14 = document.querySelector(".button14");
+        var button15 = document.querySelector(".button15");
+        var button16 = document.querySelector(".button16");
+
+        var button17 = document.querySelector(".button17");
+        var button18 = document.querySelector(".button18");
+        var button19 = document.querySelector(".button19");
+        var button20 = document.querySelector(".button20");
+
+        var button21 = document.querySelector(".button21");
+        var button22 = document.querySelector(".button22");
+        var button23 = document.querySelector(".button23");
+        var button24 = document.querySelector(".button24");
+
+        var button25 = document.querySelector(".button25");
+        var button26 = document.querySelector(".button26");
+        var button27 = document.querySelector(".button27");
+        var button28 = document.querySelector(".button28");
+
+        var button29 = document.querySelector(".button29");
+        var button30 = document.querySelector(".button30");
+        var button31 = document.querySelector(".button31");
+        var button32 = document.querySelector(".button32");
+
+        var button33 = document.querySelector(".button33");
+        var button34 = document.querySelector(".button34");
+        var button35 = document.querySelector(".button35");
+        var button36 = document.querySelector(".button36");
+
+        var button37 = document.querySelector(".button37");
+        var button38 = document.querySelector(".button38");
+        var button39 = document.querySelector(".button39");
+        var button40 = document.querySelector(".button40");
+
+        var initialTime = 60;
+        var timeElapsed = 0;
+        var interval;
+        var index = 0;
+        var correct = 0;
+        var wrong = 0;
+
+        var scoresArray = [];
+
+        loadScores();
+        
+        //-----------------QUIZ START-----------------\\
+        //when this function is called, it will:
+        //[1] add a class that we will have in css to hide the display
+        //[2] remove the class tht is hiding our initial question
+        //[3] will start the timer--counting down
+        function startQuiz() {
+            correct = 0;
+            wrong = 0;
+            startScreen.classList.add("hide");
+            questionElements[index].classList.remove("hide");
+            highScores.classList.add("hide");
+
+            if (initialTime > 0) {
+                interval = setInterval(function() {
+                    timeElapsed++;
+                    renderTime();
+                }, 1000);
+            }
+
+            index++
+        }
+
+        startButton.addEventListener("click", startQuiz);
+
+        //-----------------HIGH SCORES BUTTON-----------------\\
+        highScores.addEventListener("click", showScores);
+
+        function showScores() {
+            clearInterval(interval);
+            timeElapsed = 0;
+            initialTime = 60;
+            renderTime();
+            startScreen.classList.add("hide");
+            questionElements[10].classList.remove("hide");
+        }
+        //-----------------HIGH SCORES BUTTON-----------------\\
+        //-----------------QUIZ START-----------------\\
+
+        //-----------------TIMER-----------------\\
+        function renderTime() {
+            minutesEl.textContent = formattedMinutes();
+            secondsEl.textContent = formattedSeconds();
+
+            if (timeElapsed >= initialTime) {
+                stopTimer();
+            }
+        }
+
+        function formattedMinutes() {
+            var secondsLeft = initialTime - timeElapsed;
+            var minutesLeft = Math.floor(secondsLeft / 60);
+
+            var formattedMinutes;
+            if (minutesLeft < 0) {
+                formattedMiuntes = "0" + minutesLeft;
+            } else {
+                //this is the condition that's working
+                formattedMinutes = "0" + minutesLeft;
+            }
+            return formattedMinutes;
+        }
+
+        function formattedSeconds() {
+            var secondsLeft = (initialTime - timeElapsed) % 60;
+            var formattedSeconds;
+            if (secondsLeft < 10) {
+                formattedSeconds = "0" + secondsLeft;
+            } else {
+                formattedSeconds = secondsLeft;
+            }
+            return formattedSeconds;
+        }
+
+        var timeLeft; 
+
+        function stopTimer() {
+            if (timeElapsed >= initialTime) {
+                var currentIndex = index - 1;
+                alert("Time's up!");
+                questionElements[currentIndex].classList.add("hide");
+                questionElements[10].classList.remove("hide");
+            } else{
+                alert("Quiz finished!");
+                var value = event.target.value;
+                if (value === "correct") {
+                    correct++;
+                } else {
+                    wrong++;
+                }
+                questionElements[9].classList.add("hide");
+                questionElements[10].classList.remove("hide");
+            }
+
+            alert(`Correct: ${correct}\nWrong: ${wrong}`);
+            timeLeft = initialTime - timeElapsed;
+            clearInterval(interval);
+            timeElapsed = 0;
+            initialTime = 60;
+            renderTime();
+        }
+        //-----------------TIMER-----------------\\
+
+        //-----------------QUESTION TO QUESTION-----------------\\
+        function nextQuestion() {
+            var currentIndex = index - 1;
+            if (index < 11) {
+            questionElements[currentIndex].classList.add("hide");
+            questionElements[index].classList.remove("hide");
+            }
+
+            index++;
+
+            var value = event.target.value;
+            if (value === "correct") {
+                correct++;
+            } else {
+                wrong++;
+                timeElapsed++;
+                renderTime();
+            }
+        }
+
+        //-----------------QUESTION TO QUESTION-----------------\\
+
+        //-----------------SAVING SCORES-----------------\\
+        saveButton.addEventListener("click", function(event) {
+            event.preventDefault();
+            var user = userInitials.value.trim();
+            var finalScore = (correct * 10) + (timeLeft);
+            scoresArray.push(user + " " + finalScore);
+            userInitials.value = "";
+            scoreList.innerHTML = "";
+            questionElements[10].classList.add("hide");
+            startScreen.classList.remove("hide");
+            highScores.classList.remove("hide");
+
+            storeScores();
+            renderScores();
+            index = 0;
+        });
+        //-----------------SAVING SCORES-----------------\\
+
+        //-----------------SCORE LIST-----------------\\ 
+        function renderScores() {
+            for (var i = 0; i < scoresArray.length; i++) {
+                var individualScores = scoresArray[i];
+                var li = document.createElement("li");
+                li.textContent = individualScores;
+                scoreList.appendChild(li);
+            }
+        }
+
+        function storeScores() {
+            localStorage.setItem("savedscores", JSON.stringify(scoresArray));
+        }
+
+        function loadScores() {
+            var loadScores = JSON.parse(localStorage.getItem("savedscores"));
+            if (loadScores !== null) {
+                scoresArray = loadScores;
+            }
+            renderScores();
+        }
+
+        button1.addEventListener("click", nextQuestion);
+        button2.addEventListener("click", nextQuestion);
+        button3.addEventListener("click", nextQuestion);
+        button4.addEventListener("click", nextQuestion);
+
+        button5.addEventListener("click", nextQuestion);
+        button6.addEventListener("click", nextQuestion);
+        button7.addEventListener("click", nextQuestion);
+        button8.addEventListener("click", nextQuestion);
+
+        button9.addEventListener("click", nextQuestion);
+        button10.addEventListener("click", nextQuestion);
+        button11.addEventListener("click", nextQuestion);
+        button12.addEventListener("click", nextQuestion);
+
+        button13.addEventListener("click", nextQuestion);
+        button14.addEventListener("click", nextQuestion);
+        button15.addEventListener("click", nextQuestion);
+        button16.addEventListener("click", nextQuestion);
+
+        button17.addEventListener("click", nextQuestion);
+        button18.addEventListener("click", nextQuestion);
+        button19.addEventListener("click", nextQuestion);
+        button20.addEventListener("click", nextQuestion);
+
+        button21.addEventListener("click", nextQuestion);
+        button22.addEventListener("click", nextQuestion);
+        button23.addEventListener("click", nextQuestion);
+        button24.addEventListener("click", nextQuestion);
+
+        button25.addEventListener("click", nextQuestion);
+        button26.addEventListener("click", nextQuestion);
+        button27.addEventListener("click", nextQuestion);
+        button28.addEventListener("click", nextQuestion);
+
+        button29.addEventListener("click", nextQuestion);
+        button30.addEventListener("click", nextQuestion);
+        button31.addEventListener("click", nextQuestion);
+        button32.addEventListener("click", nextQuestion);
+
+        button33.addEventListener("click", nextQuestion);
+        button34.addEventListener("click", nextQuestion);
+        button35.addEventListener("click", nextQuestion);
+        button36.addEventListener("click", nextQuestion);
+
+        button37.addEventListener("click", stopTimer);
+        button38.addEventListener("click", stopTimer);
+        button39.addEventListener("click", stopTimer);
+        button40.addEventListener("click", stopTimer);
+
+    </script>
+</html>
