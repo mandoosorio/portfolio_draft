@@ -269,6 +269,26 @@
       .container {
         max-width: 700px;
       }
+      #burger {
+        max-width: 100%;
+        border-radius: 5%;
+        margin-bottom: 2%;
+      }
+      #weather {
+        max-width: 100%;
+        border-radius: 5%;
+        margin-bottom: 2%;
+      }
+      #schedule {
+        max-width: 100%;
+        border-radius: 5%;
+        margin-bottom: 2%;
+      }
+      #notes {
+        max-width: 100%;
+        border-radius: 5%;
+        margin-bottom: 2%;
+      }
     }
 
     @media screen and (max-width: 693px) {
@@ -298,6 +318,26 @@
       }
       .bottom-right {
         margin-left: 3px;
+      }
+      #burger {
+        max-width: 100%;
+        border-radius: 5%;
+        margin-bottom: 2%;
+      }
+      #weather {
+        max-width: 100%;
+        border-radius: 5%;
+        margin-bottom: 2%;
+      }
+      #schedule {
+        max-width: 100%;
+        border-radius: 5%;
+        margin-bottom: 2%;
+      }
+      #notes {
+        max-width: 100%;
+        border-radius: 5%;
+        margin-bottom: 2%;
       }
     }
 
@@ -332,5 +372,25 @@
       }
       .basics {
         font-size: 11px;
+      }
+      #burger {
+        max-width: 100%;
+        border-radius: 5%;
+        margin-bottom: 2%;
+      }
+      #weather {
+        max-width: 100%;
+        border-radius: 5%;
+        margin-bottom: 2%;
+      }
+      #schedule {
+        max-width: 100%;
+        border-radius: 5%;
+        margin-bottom: 2%;
+      }
+      #notes {
+        max-width: 100%;
+        border-radius: 5%;
+        margin-bottom: 2%;
       }
     }
