@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-    <title>Armando Osorio (Responsive Portfolio)</title>
+    <link rel="stylesheet" href="public/assets/css/style.css">
+    <title>Armando Osorio</title>
   </head>
 
   <body>
@@ -24,6 +24,12 @@
             <li class="nav-item">
               <a class="nav-link" href="#activities">Activities</a>
             </li>
+            <!-- <li class="nav-item">
+              <a class="nav-link" href="#cli">CLI Projects</a>
+            </li> -->
+            <!-- <li class="nav-item">
+              <a class="nav-link" href="#collabs">Collaborations</a>
+            </li> -->
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Projects
@@ -33,6 +39,7 @@
                 <a class="dropdown-item" href="activity_htmls/weather_app/index.html">Weather Dashboard</a>
                 <a class="dropdown-item" href="activity_htmls/day_calendar/index.html">Day Calendar</a>
                 <a class="dropdown-item" href="activity_htmls/quiz/index.html">Code Quiz</a>
+                <a class="dropdown-item" href="https://nodejs-note-taker.herokuapp.com/">Node Server Note Taker</a>
                 <a class="dropdown-item" href="https://mvc-style-burger-app.herokuapp.com">MVC Burger App</a>
                 <div class="dropdown-divider"></div>
                 <a class="dropdown-item" href="https://github.com/mandoosorio">GitHub Profile</a>
@@ -51,7 +58,7 @@
     <!--NAVBAR-->
 
     <!--PROFILE PICTURE-->
-    <img src="center_top.jpg" alt="Profile Picture" style="width:400px; height:300px; border-radius:8px;" class="center">
+    <img src="public/assets/img/center_top.jpg" alt="Profile Picture" style="width:400px; height:300px; border-radius:8px;" class="center">
     <!--PROFILE PICTURE-->
 
     <!--NEXT TO IMAGE HAVE A UTILITIES BAR WITH CALENDAR, DATE, ETC-->
@@ -61,15 +68,16 @@
         <div class="row">
           <div class="col-sm-4 left-column">
               <h2>About</h2>
-              <p>I graduated from the University of California, Irvine with a Bachelor's Degree in Film & Media. Throughout my five-year attendance, I became extremely involved in UCI's media and offices. As a content producer in the University's University Advancement offices, I created content that was aimed directly to our donors. I continued to develop these skills and transitioned over to web development in search for a more personal and controlled form of content creation where I could use my videography knowledge and apply it to the web.</p>
+              <p>I graduated from the University of California, Irvine with a Bachelor's Degree in Film & Media. Throughout my five-year attendance, I became extremely involved in UCI's media and offices. As a content producer in the university's University Advancement division, I created content that was aimed directly to our donors. I continued to develop these skills and transitioned over to web development in search for a more personal and controlled form of content creation where I could use my videography knowledge and apply it to the web.</p>
           </div>
           <div class="col-sm-4 center-column">
               <h2>Overview</h2>
+              <!--Full stack tools and knowledge-->
               <p>Every image that you see on this page was shot by myself. Photography and videography have been a true passion for me due to how much control you have over an image or frame to focus and show whatever it is that you want to. As a full-stack developer, I will take these same inspirations and methods to create pieces of art and create something that others will be able to interact with.</p>
           </div>
           <div class="col-sm-4 right-column">
               <h2>Disciplines</h2>
-              <p>As a Film & Media major and through my work experience, I obtain high editorial skills as well as copywriting skills which I value to be extremely important in web developing. Proper grammar ties in with proper syntax which helps analyze code and indentify problems. Another important aspect of web development is the customer experience and for this I pull from my business background--not just in customer service, but also from demoing new technology and providing detailed reviews of my experiences.</p>
+              <p>Through my education and work experience, I've obtained high editorial skills as well as copywriting skills which I value to be extremely important in web developing. Proper grammar ties in with proper syntax which helps analyze code and indentify problems. Another important aspect of web development is the customer's experience and for this I pull from my business background--not just in customer service, but also from demoing new technology and providing detailed reviews of my experiences as well as my role in business operations.</p>
           </div>
         </div>
     </div>
@@ -79,32 +87,40 @@
     <div class="container" id="activities">
       <div class="row row-cols-2">
         <div class="col top-left">
-          <h4><a href="activity_htmls/rock_paper_scissors.html" target="_blank">Rock, Paper, Scissors</a></h3>
+          <h4><a href="https://nodejs-note-taker.herokuapp.com" target="_blank">Node Server Note Taker</a></h3>
+            <!--replace with node note taker-->
             <p class="basics">
-              This is just the skeleton of the game, basic structure and functionaltiy. 
+              In this application, all the information is stored within node.js so we begin to have a functional server to save data and create changes. 
             </p>
+            <img id="notes" class="basics" src="public/assets/img/note_taker.png">
         </div>
         <div class="col top-right">
           <h4><a href="activity_htmls/weather_app/index.html" target="_blank">Weather Dashboard</a></h3>
             <p class="basics">
-              This API based application will pull data from another server and render the weather results and information, saving the search inputs into local storage.
+              This API based application will pull data from another server and render the weather results and information, saving all data in local storage.
             </p>
+            <img id="weather" class="basics" src="public/assets/img/weather_dashboard.png">
         </div>
         <div class="col bottom-left">
           <h4><a href="activity_htmls/day_calendar/index.html" target="_blank">Day Calendar</a></h3>
             <p class="basics">
               Through the use of moment.js, we will use time values to indicate passed time and color-code our time blocks accordingly. Local storage will save text.
             </p>
+            <img id="schedule" class="basics" src="public/assets/img/schedule.png">
         </div>
         <div class="col bottom-right">
           <h4><a href="https://mvc-style-burger-app.herokuapp.com" target="_blank">MVC Burger App</a></h3>
             <p class="basics">
               An app using MySQL, Node, Express, Handlebars and a homemade ORM. Following MVC design pattern; using Node and MySQL to query and route data, and Handlebars to generate HTML.
             </p>
+            <img id="burger" class="basics" src="public/assets/img/burger_app.png">
         </div>
       </div>
     </div>
     <!--ACTIVITIES-->
+
+    <!--CLI PROJECTS #cli 'employee tracker' 'readme generator' **update node notetaker css**-->
+    <!--COLLABORATIONS #collabs 'recipe app' 'national park app'-->
 
     <!--HIDDEN PAGE THAT NEEDS A PASSWORD TO ACCESS-->
 

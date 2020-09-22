@@ -1,6 +1,7 @@
     body {
-      background-image: url("body_background.JPG");
+      background-image: url("../img/body_background.JPG");
       background-repeat: no-repeat;
+      background-color: rgb(63, 61, 61);
       background-size: cover;
     }
     h2 {
@@ -41,27 +42,27 @@
     }
     .center-column {
       max-width: 31.94%;
-      background-image: url("middle_third.jpg");
+      background-color: black;
       background-size: cover;
       border-radius: 8px;
     }
     .left-column {
       max-width: 31.94%;
-      background-image: url("left_third.jpg");
+      background-color: black;
       background-size: cover;
       border-radius: 8px;
       margin-right: 20px;
     }
     .right-column {
       max-width: 31.94%;
-      background-image: url("right_third.jpg");
+      background-color: black;
       background-size: cover;
       border-radius: 8px;
       margin-right: 0px;
       margin-left: 20px;
     }
     .top-left {
-      background-image: url("top-left.jpg");
+      background-color: black;
       background-size: cover;
       border-radius: 8px;
       margin-right: 10px;
@@ -69,7 +70,7 @@
       margin-bottom: 15px;
     }
     .top-right {
-      background-image: url("top-right.jpg");
+      background-color: black;
       background-size: cover;
       border-radius: 8px;
       margin-right: 0px;
@@ -78,14 +79,14 @@
       margin-bottom: 15px;
     }
     .bottom-left {
-      background-image: url("bottom-left.jpg");
+      background-color: black;
       background-size: cover;
       border-radius: 8px;
       margin-right: 10px;
       max-width: 48.95%;
     }
     .bottom-right {
-      background-image: url("bottom-right.jpg");
+      background-color: black;
       background-size: cover;
       border-radius: 8px;
       margin-right: 0px;
@@ -97,6 +98,26 @@
       padding-bottom: 5px;
       padding-left: 25px;
       padding-right: 25px;
+    }
+    #burger {
+      max-width: 50%;
+      border-radius: 5%;
+      margin-bottom: 2%;
+    }
+    #weather {
+      max-width: 50%;
+      border-radius: 5%;
+      margin-bottom: 2%;
+    }
+    #schedule {
+      max-width: 50%;
+      border-radius: 5%;
+      margin-bottom: 2%;
+    }
+    #notes {
+      max-width: 50%;
+      border-radius: 5%;
+      margin-bottom: 2%;
     }
     a {
       color: white;
@@ -130,13 +151,13 @@
     @media screen and (max-width: 992px) {
       .center-column {
         max-width: 32%;
-        background-image: url("middle_third.jpg");
+        background-color: black;
         background-size: cover;
         border-radius: 8px;
       }
       .left-column {
         max-width: 32%;
-        background-image: url("left_third.jpg");
+        background-color: black;
         background-size: cover;
         border-radius: 8px;
         margin-right: 15px;
@@ -144,14 +165,14 @@
       }
       .right-column {
         max-width: 32%;
-        background-image: url("right_third.jpg");
+        background-color: black;
         background-size: cover;
         border-radius: 8px;
         margin-right: 0px;
         margin-left: 15px;
       }
       .top-left {
-        background-image: url("top-left.jpg");
+        background-color: black;
         background-size: cover;
         border-radius: 8px;
         margin-left: 0px;
@@ -160,7 +181,7 @@
         margin-bottom: 15px;
       }
       .top-right {
-        background-image: url("top-right.jpg");
+        background-color: black;
         background-size: cover;
         border-radius: 8px;
         margin-right: 0px;
@@ -169,7 +190,7 @@
         margin-bottom: 15px;
       }
       .bottom-left {
-        background-image: url("bottom-left.jpg");
+        background-color: black;
         background-size: cover;
         border-radius: 8px;
         margin-left: 0px;
@@ -177,7 +198,7 @@
         max-width: 49.3%;
       }
       .bottom-right {
-        background-image: url("bottom-right.jpg");
+        background-color: black;
         background-size: cover;
         border-radius: 8px;
         margin-right: 0px;
@@ -192,27 +213,27 @@
     @media screen and (max-width: 768px) {
       .center-column {
         max-width: 32.33%;
-        background-image: url("middle_third.jpg");
+        background-color: black;
         background-size: cover;
         border-radius: 8px;
       }
       .left-column {
         max-width: 32.33%;
-        background-image: url("left_third.jpg");
+        background-color: black;
         background-size: cover;
         border-radius: 8px;
         margin-right: 10px;
       }
       .right-column {
         max-width: 32.33%;
-        background-image: url("right_third.jpg");
+        background-color: black;
         background-size: cover;
         border-radius: 8px;
         margin-right: 0px;
         margin-left: 10px;
       }
       .top-left {
-        background-image: url("top-left.jpg");
+        background-color: black;
         background-size: cover;
         border-radius: 8px;
         margin-left: 0px;
@@ -221,7 +242,7 @@
         margin-bottom: 15px;
       }
       .top-right {
-        background-image: url("top-right.jpg");
+        background-color: black;
         background-size: cover;
         border-radius: 8px;
         margin-right: 0px;
@@ -230,7 +251,7 @@
         margin-bottom: 15px;
       }
       .bottom-left {
-        background-image: url("bottom-left.jpg");
+        background-color: black;
         background-size: cover;
         border-radius: 8px;
         margin-left: 0px;
@@ -238,7 +259,7 @@
         max-width: 49.28%;
       }
       .bottom-right {
-        background-image: url("bottom-right.jpg");
+        background-color: black;
         background-size: cover;
         border-radius: 8px;
         margin-right: 0px;
