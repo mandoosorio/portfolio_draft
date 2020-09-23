@@ -32,6 +32,12 @@
       color: white;
       font-family: "Courier New";
     }
+    #cli-title {
+      color: white;
+      font-family: "Courier New";
+      font-size: 40px;
+      margin-top: 5%;
+    }
     .col-sm-4 {
       max-width: 31.94%;
       background-size: cover;
@@ -115,6 +121,21 @@
       margin-bottom: 2%;
     }
     #notes {
+      max-width: 50%;
+      border-radius: 5%;
+      margin-bottom: 2%;
+    }
+    #readme {
+      max-width: 50%;
+      border-radius: 5%;
+      margin-bottom: 2%;
+    }
+    #emploi {
+      max-width: 50%;
+      border-radius: 5%;
+      margin-bottom: 2%;
+    }
+    #builder {
       max-width: 50%;
       border-radius: 5%;
       margin-bottom: 2%;
