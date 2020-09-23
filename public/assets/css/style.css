@@ -249,6 +249,21 @@
         border-radius: 5%;
         margin-bottom: 2%;
       }
+      #readme {
+        max-width: 100%;
+        border-radius: 5%;
+        margin-bottom: 2%;
+      }
+      #emploi {
+        max-width: 100%;
+        border-radius: 5%;
+        margin-bottom: 2%;
+      }
+      #builder {
+        max-width: 100%;
+        border-radius: 5%;
+        margin-bottom: 2%;
+      }
     }
 
     @media screen and (max-width: 768px) {
@@ -330,6 +345,21 @@
         border-radius: 5%;
         margin-bottom: 2%;
       }
+      #readme {
+        max-width: 100%;
+        border-radius: 5%;
+        margin-bottom: 2%;
+      }
+      #emploi {
+        max-width: 100%;
+        border-radius: 5%;
+        margin-bottom: 2%;
+      }
+      #builder {
+        max-width: 100%;
+        border-radius: 5%;
+        margin-bottom: 2%;
+      }
     }
 
     @media screen and (max-width: 693px) {
@@ -376,6 +406,21 @@
         margin-bottom: 2%;
       }
       #notes {
+        max-width: 100%;
+        border-radius: 5%;
+        margin-bottom: 2%;
+      }
+      #readme {
+        max-width: 100%;
+        border-radius: 5%;
+        margin-bottom: 2%;
+      }
+      #emploi {
+        max-width: 100%;
+        border-radius: 5%;
+        margin-bottom: 2%;
+      }
+      #builder {
         max-width: 100%;
         border-radius: 5%;
         margin-bottom: 2%;
@@ -430,6 +475,21 @@
         margin-bottom: 2%;
       }
       #notes {
+        max-width: 100%;
+        border-radius: 5%;
+        margin-bottom: 2%;
+      }
+      #readme {
+        max-width: 100%;
+        border-radius: 5%;
+        margin-bottom: 2%;
+      }
+      #emploi {
+        max-width: 100%;
+        border-radius: 5%;
+        margin-bottom: 2%;
+      }
+      #builder {
         max-width: 100%;
         border-radius: 5%;
         margin-bottom: 2%;
